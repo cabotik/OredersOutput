@@ -1,0 +1,24 @@
+﻿<Window x:Class="OredersUotput.ToolForms.AddOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OredersUotput.ToolForms"
+        mc:Ignorable="d"
+        Title="Add Order Window" MinHeight="350" MinWidth="200" MaxHeight="350" MaxWidth="200">
+    <Grid>
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+           
+            <Label Margin="5" Content="Enter order's structure"/>
+            <TextBox Margin="5" Width="150" Name="tbStructure"/>
+            <Label Margin="5" Content="Enter order's price"/>
+            <TextBox Margin="5" Width="150" Name="tbPrice"/>
+            <Label Margin="5" Content="Enter client's name"/>
+            <TextBox Margin="5" Width="150" Name="tbClient"/>
+            <Button Margin="5" Name="btnAdd" Click="btnAdd_Click" Content="Add order" Background="Bisque"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Content="Back" Margin="5" Background="Bisque" Name="btnBack" Click="btnBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
